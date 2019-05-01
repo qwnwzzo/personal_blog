@@ -13,7 +13,9 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "@material-ui/core": "^3.9.3",
     "gatsby": "^2.3.34",
+    "immutable": "^4.0.0-rc.12",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
