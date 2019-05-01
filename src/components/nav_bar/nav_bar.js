@@ -1,73 +1,41 @@
 import React, { Component } from "react";
-import { withStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Icon from '@material-ui/core/Icon';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Image from 'react-bootstrap/Image'
+import logo from "../../statics/qwnwzzo.jpeg";
+import { MdOpenInNew } from "react-icons/md";
 
 class NavBar extends Component {
   render(){
-    const { classes, pathName } = this.props;
+    const { pathName } = this.props;
 
     return (
-      <div className={classes.container}>
-        <AppBar 
-          position="static"
-          classes={{
-            root: classes.navBarContainer
-          }}>
-          <Toolbar>
-            <div style={{width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-              <div style={{width: '40%', fontSize: 'large'}}>Jiaqiang Li</div>
-              <div className={pathName === '/'? classes.selectedTitle: classes.unselectedTitle}>
-                Home
-              </div>
-              <div className={pathName === '/algorithms'? classes.selectedTitle: classes.unselectedTitle}>
-                Algorithms
-              </div>
-              <div 
-                style={{marginRight: 30, flex: '1 1 auto', textAlign: 'right', cursor: 'pointer'}}>
-                <Icon className={classes.githubIcon}>
-                  open_in_new
-                </Icon>
-                <span onClick={() => window.open('https://github.com/qwnwzzo', '_blank')}>
-                  Github
-                </span>
-              </div>
-            </div>
-          </Toolbar>
-        </AppBar>
+      <div style={{display: 'flex', flexDirection: 'column', width: '100%'}}>
+        <Navbar bg="dark" variant="dark" sticky="top">
+          <Navbar.Brand style={{marginRight: 100}}>
+            <Image style={{width: 40, height: 40, marginRight: 10}} src={logo} roundedCircle />
+            <span>Jiaqiang Li</span>
+          </Navbar.Brand>
+          <Nav className="mr-auto" style={{width: '100%', display: 'flex', flexDirection: 'row'}}>
+            <Nav.Item 
+              style={{marginRight: 20}}>
+              <Nav.Link style={{color: pathName === '/'? 'white': '#858585'}}>Home</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link style={{color: pathName === '/algorithms'? 'white': '#858585'}}>Algorithms</Nav.Link>
+            </Nav.Item>
+            <Nav.Item style={{flex: '1 1 auto', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
+              <Nav.Link onClick={() => window.open('https://github.com/qwnwzzo', '_blank')}>
+                <MdOpenInNew/>
+                <span style={{marginLeft: 10}}>Github</span>
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar>
         {this.props.children}
       </div>
     );
   }
 }
 
-const styles = theme => ({
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    width: '100%',
-  },
-  navBarContainer: {
-    backgroundColor: '#1E1E1E',
-    color: 'white',
-    width: '100%'
-  },
-  githubIcon: {
-    fontSize: 'small',
-    marginRight: 5,
-  },
-  selectedTitle: {
-    padding: '0px 5px 3px 5px',
-    marginRight: 30,
-    fontWeight: 'bold',
-    borderBottom: 'solid 1px white',
-  },
-  unselectedTitle: {
-    padding: '0px 5px 3px 5px',
-    marginRight: 30,
-    fontWeight: 100,
-  },
-})
-
-export default withStyles(styles)(NavBar);
+export default NavBar;
