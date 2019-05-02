@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Image from 'react-bootstrap/Image'
+import Image from 'react-bootstrap/Image';
 import logo from "../../statics/qwnwzzo.jpeg";
 import { MdOpenInNew } from "react-icons/md";
 
