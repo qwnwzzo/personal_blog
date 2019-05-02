@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Image from 'react-bootstrap/Image';
-import logo from "../../statics/qwnwzzo.jpeg";
+import logo from '../../statics/qwnwzzo.jpeg';
+import wechat from '../../statics/wechat.jpg';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { MdEmail } from "react-icons/md";
+import { MdChat } from "react-icons/md";
 import HomeIntroductionPanel from './home_introduction_panel.js';
 import HomeEducationBackgroundPanel from './home_education_background_panel.js';
 
@@ -40,6 +42,14 @@ class HomeContent extends Component {
                 <div>
                   <MdEmail />
                   <span style={{marginLeft: 10, fontSize: 'small'}}>jiaqiang.li@mail.utoronto.ca</span>
+                </div>
+                <div style={{width: '100%', display: 'flex', flexDirection: 'row', marginTop: 10}}>
+                  <div>
+                    <MdChat />
+                  </div>
+                  <div style={{flex: '1 1 auto', paddingLeft: 10}}>
+                    <Image style={{width: '100%'}} src={wechat} thumbnail />
+                  </div>
                 </div>
               </ListGroup.Item>
             </ListGroup>
