@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image';
 import logo from "../../statics/qwnwzzo.jpeg";
 import { MdOpenInNew } from "react-icons/md";
+import { Link } from "gatsby"
 
 class NavBar extends Component {
   render(){
@@ -19,10 +20,22 @@ class NavBar extends Component {
           <Nav className="mr-auto" style={{width: '100%', display: 'flex', flexDirection: 'row'}}>
             <Nav.Item 
               style={{marginRight: 20}}>
-              <Nav.Link style={{color: pathName === '/'? 'white': '#858585'}}>Home</Nav.Link>
+              <Nav.Link>
+                <Link 
+                  to="/"
+                  style={{color: pathName === '/'? 'white': '#858585'}}>
+                  Home
+                </Link> 
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link style={{color: pathName === '/algorithms'? 'white': '#858585'}}>Algorithms</Nav.Link>
+              <Nav.Link>
+                <Link 
+                  to="/algorithms/"
+                  style={{color: pathName === '/algorithms/'? 'white': '#858585'}}>
+                    Algorithms
+                </Link>
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item style={{flex: '1 1 auto', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
               <Nav.Link onClick={() => window.open('https://github.com/qwnwzzo', '_blank')}>
