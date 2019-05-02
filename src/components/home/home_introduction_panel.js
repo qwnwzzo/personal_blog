@@ -11,7 +11,7 @@ class HomeIntroductionPanel extends Component {
           at <span style={{fontWeight: 'bold'}}>the University of Toronto</span> in 2016.
         </div>
         <div style={{fontWeight: 100, marginTop: 10}}>
-          Now I am working as a <span style={{fontWeight: 'bold'}}>full stack engineer</span>, 
+          Now I am working as a <span style={{fontWeight: 'bold'}}>full stack developer</span>, 
           focusing on <span style={{fontWeight: 'bold'}}>web app, mobile app and desktop app development</span>.
           I am quite interested in <span style={{fontWeight: 'bold'}}>data structure and algorithms</span>. Furthermore, I am also learning and doing some
           stuff about <span style={{fontWeight: 'bold'}}>Data Analysis, Machine Learning, Game Development, etc</span>.

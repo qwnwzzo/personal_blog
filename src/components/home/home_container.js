@@ -8,8 +8,12 @@ class HomeContainer extends Component {
   }
 
   // get called when clicking the home nav bar item
+  // @params {int} index - 
+  //   - 0: Introduction
+  //   - 1: Education Background
+  //   - 2: Skills
+  //   - 3: Work Experience
   _changeHomeNavBarIndex(index){
-    console.log(index);
     this.setState({n_homeNavBarIndex: index});
   }
 
