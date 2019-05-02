@@ -32,7 +32,9 @@ class NavBar extends Component {
             </Nav.Item>
           </Nav>
         </Navbar>
-        {this.props.children}
+        <div>
+          {this.props.children}
+        </div>
       </div>
     );
   }

@@ -1,12 +1,33 @@
-import React from "react";
+import React, { Component } from "react";
 import HomeNavBar from './home_nav_bar.js';
 import HomeContent from './home_content.js';
 
-export default (props) => {
-  return (
-    <div style={{width: '100%', display: 'flex', flexDirection: 'row', paddingTop: 30}}>
-      <div style={{width: '20%', position: 'fixed'}}><HomeNavBar /></div>
-      <div style={{width: '80%', marginLeft: '20%'}}><HomeContent /></div>
-    </div>
-  );
+class HomeContainer extends Component {
+  state = {
+    n_homeNavBarIndex: 0,
+  }
+
+  // get called when clicking the home nav bar item
+  _changeHomeNavBarIndex(index){
+    console.log(index);
+    this.setState({n_homeNavBarIndex: index});
+  }
+
+  render(){
+    return (
+      <div style={{width: '100%', display: 'flex', flexDirection: 'row'}}>
+        <div style={{width: '20%', position: 'fixed'}}>
+          <HomeNavBar 
+            changeHomeNavBarIndex={this._changeHomeNavBarIndex.bind(this)}
+            homeNavBarIndex={this.state.n_homeNavBarIndex} />
+        </div>
+        <div 
+          style={{width: '80%', marginLeft: '20%', paddingLeft: 30}}>
+          <HomeContent homeNavBarIndex={this.state.n_homeNavBarIndex} />
+        </div>
+      </div>
+    );
+  }
 }
+
+export default HomeContainer;
