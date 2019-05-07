@@ -26,6 +26,7 @@ class HomeWorkExperiencePanel extends Component {
             }}
           >
             <h5>Full Stack Developer</h5>
+            <div>Toronto, Ontario</div>
             <div 
               style={{width: '100%', marginTop: 10, cursor: 'pointer'}}
               onClick={() => window.open('https://meazureup.com/', '_blank')}>
@@ -44,6 +45,7 @@ class HomeWorkExperiencePanel extends Component {
             }}
           >
             <h5>Front-end Developer</h5>
+            <div>Toronto, Ontario</div>
             <div 
               style={{width: '100%', marginTop: 10, cursor: 'pointer'}}
               onClick={() => window.open('https://meazureup.com/', '_blank')}>

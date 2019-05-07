@@ -14,7 +14,20 @@ class RenderDescriptionTooltip extends Component {
           ...this.props.style,
         }}
       >
-        {this.props.description}
+        {
+          this.props.description.length > 0 &&
+          (
+            <ul>
+              {
+                this.props.description.map((str, index) => {
+                  return (
+                    <li key={index}>{str}</li>
+                  );
+                })
+              }
+            </ul>
+          )
+        }
       </div>
     );
   }
@@ -36,7 +49,7 @@ class HomeSkillsDescription extends Component {
                 placement="auto"
                 delay={{ show: 250, hide: 400 }}
                 overlay={
-                  <RenderDescriptionTooltip description={"I have work experience with Python, Javascript and Java. I am also familiar with C#, C, C++, Swift and R."} />
+                  <RenderDescriptionTooltip description={["I have work experience with Python, Javascript and Java.", "I am familiar with C#, C, C++, Swift and R."]} />
                 }
               >
                 <div>
@@ -55,7 +68,7 @@ class HomeSkillsDescription extends Component {
                 placement="auto"
                 delay={{ show: 100, hide: 100 }}
                 overlay={
-                  <RenderDescriptionTooltip description={"I have work experience with MySQL and PostgreSQL. I am also familiar with MongoDB."} />
+                  <RenderDescriptionTooltip description={["I have work experience with MySQL and PostgreSQL.", "I am also familiar with MongoDB."]} />
                 }
               >
                 <div>
@@ -64,6 +77,132 @@ class HomeSkillsDescription extends Component {
                     <ul>
                       <li>MySQL, PostgreSQL</li>
                       <li>MongoDB</li>
+                    </ul>
+                  </div>
+                </div>
+              </OverlayTrigger>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <OverlayTrigger
+                placement="auto"
+                delay={{ show: 100, hide: 100 }}
+                overlay={
+                  <RenderDescriptionTooltip description={[]} />
+                }
+              >
+                <div>
+                  <div style={{fontWeight: 500}}>Software Development</div>
+                  <div style={{marginLeft: 20}}>
+                    <ul>
+                      <li>Android Development</li>
+                      <li>Cross-platform Mobile Development (React Native)</li>
+                      <li>Desktop Development (Electron.js)</li>
+                    </ul>
+                  </div>
+                </div>
+              </OverlayTrigger>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <OverlayTrigger
+                placement="auto"
+                delay={{ show: 100, hide: 100 }}
+                overlay={
+                  <RenderDescriptionTooltip description={[]} />
+                }
+              >
+                <div>
+                  <div style={{fontWeight: 500}}>Front-end skills</div>
+                  <div style={{marginLeft: 20}}>
+                    <ul>
+                      <li>HTML, CSS, Javascript</li>
+                      <li>React, React Native, Webpack</li>
+                      <li>
+                        <div>Some Node.js Libraries I like</div>
+                        <div>
+                          <ul>
+                            <li>Immutable.js</li>
+                            <li>Moment.js</li>
+                            <li>D3.js</li>
+                            <li>Electron.js</li>
+                            <li>lodash</li>
+                            <li>superagent</li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </OverlayTrigger>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <OverlayTrigger
+                placement="auto"
+                delay={{ show: 100, hide: 100 }}
+                overlay={
+                  <RenderDescriptionTooltip description={[]} />
+                }
+              >
+                <div>
+                  <div style={{fontWeight: 500}}>Backend skills</div>
+                  <div style={{marginLeft: 20}}>
+                    <ul>
+                      <li>Language: Python, Java</li>
+                      <li>Framework: Django, Spring</li>
+                    </ul>
+                  </div>
+                </div>
+              </OverlayTrigger>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <OverlayTrigger
+                placement="auto"
+                delay={{ show: 100, hide: 100 }}
+                overlay={
+                  <RenderDescriptionTooltip description={[]} />
+                }
+              >
+                <div>
+                  <div style={{fontWeight: 500}}>Cloud</div>
+                  <div style={{marginLeft: 20}}>
+                    <ul>
+                      <li>Google Cloud Platform</li>
+                    </ul>
+                  </div>
+                </div>
+              </OverlayTrigger>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <OverlayTrigger
+                placement="auto"
+                delay={{ show: 100, hide: 100 }}
+                overlay={
+                  <RenderDescriptionTooltip description={[]} />
+                }
+              >
+                <div>
+                  <div style={{fontWeight: 500}}>Data Analysis</div>
+                  <div style={{marginLeft: 20}}>
+                    <ul>
+                      <li>Machine Learning</li>
+                      <li>Digital Image Processing</li>
+                    </ul>
+                  </div>
+                </div>
+              </OverlayTrigger>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <OverlayTrigger
+                placement="auto"
+                delay={{ show: 100, hide: 100 }}
+                overlay={
+                  <RenderDescriptionTooltip description={[]} />
+                }
+              >
+                <div>
+                  <div style={{fontWeight: 500}}>Tools</div>
+                  <div style={{marginLeft: 20}}>
+                    <ul>
+                      <li>Git</li>
                     </ul>
                   </div>
                 </div>
