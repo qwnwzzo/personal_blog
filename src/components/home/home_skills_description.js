@@ -56,7 +56,7 @@ class HomeSkillsDescription extends Component {
                   <div style={{fontWeight: 500}}>Computer Language</div>
                   <div style={{marginLeft: 20}}>
                     <ul>
-                      <li>Python, Javascript, Java</li>
+                      <li>Python, Javascript, Java, sql</li>
                       <li>C#, C, C++, Swift, R</li>
                     </ul>
                   </div>
@@ -97,6 +97,7 @@ class HomeSkillsDescription extends Component {
                       <li>Android Development</li>
                       <li>Cross-platform Mobile Development (React Native)</li>
                       <li>Desktop Development (Electron.js)</li>
+                      <li>Game Development (Unity 3D)</li>
                     </ul>
                   </div>
                 </div>
@@ -124,8 +125,10 @@ class HomeSkillsDescription extends Component {
                             <li>Moment.js</li>
                             <li>D3.js</li>
                             <li>Electron.js</li>
-                            <li>lodash</li>
-                            <li>superagent</li>
+                            <li>Lodash</li>
+                            <li>CrossFilter</li>
+                            <li>Superagent</li>
+                            <li>Gatsby</li>
                           </ul>
                         </div>
                       </li>
