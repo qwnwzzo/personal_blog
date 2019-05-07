@@ -4,8 +4,8 @@ import ListGroup from 'react-bootstrap/ListGroup';
 class HomeNavBar extends Component {
   render(){
     return (
-      <div style={{width: '100%', fontSize: 'medium', color: '#898989', marginTop: 30}}>
-        <div style={{width: '90%', borderRight: 'solid 1px #EAEAEA'}}>
+      <div style={{width: '100%', fontSize: 'medium', color: '#898989', marginTop: 30, boxShadow: '0.5rem 0.5rem 2rem 0 #808080'}}>
+        <div style={{width: '100%', marginLeft: 10}}>
           <ListGroup>
             <ListGroup.Item 
                 style={{border: 'solid 1px white', padding: 10, cursor: 'pointer', fontWeight: this.props.homeNavBarIndex === 0? 'bold': 'normal'}}
