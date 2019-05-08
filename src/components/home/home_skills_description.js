@@ -49,7 +49,7 @@ class HomeSkillsDescription extends Component {
                 placement="auto"
                 delay={{ show: 250, hide: 400 }}
                 overlay={
-                  <RenderDescriptionTooltip description={["I have work experience with Python, Javascript and Java.", "I am familiar with C#, C, C++, Swift and R."]} />
+                  <RenderDescriptionTooltip description={["I have work experience with Python, Javascript and Java."]} />
                 }
               >
                 <div>
@@ -57,7 +57,6 @@ class HomeSkillsDescription extends Component {
                   <div style={{marginLeft: 20}}>
                     <ul>
                       <li>Python, Javascript, Java, sql</li>
-                      <li>C#, C, C++, Swift, R</li>
                     </ul>
                   </div>
                 </div>
