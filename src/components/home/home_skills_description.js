@@ -205,6 +205,7 @@ class HomeSkillsDescription extends Component {
                   <div style={{marginLeft: 20}}>
                     <ul>
                       <li>Git</li>
+                      <li>Webpack</li>
                     </ul>
                   </div>
                 </div>
