@@ -74,6 +74,15 @@ class HomeSkillsDescription extends Component {
               </div>
             </ListGroup.Item>
             <ListGroup.Item>
+              <div style={{fontWeight: 500}}>Software Test</div>
+              <div style={{marginLeft: 20}}>
+                <ul>
+                  <li>Robot Framework</li>
+                  <li>Enzyme, Mocha</li>
+                </ul>
+              </div>
+            </ListGroup.Item>
+            <ListGroup.Item>
               <div style={{fontWeight: 500}}>Cloud</div>
               <div style={{marginLeft: 20}}>
                 <ul>
