@@ -25,7 +25,7 @@ class HomeSkillsDescription extends Component {
               <div style={{marginLeft: 20}}>
                 <ul>
                   <li>MySQL, PostgreSQL</li>
-                  <li>MongoDB</li>
+                  <li>MongoDB, GraphQL</li>
                 </ul>
               </div>
             </ListGroup.Item>

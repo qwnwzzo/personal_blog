@@ -38,16 +38,20 @@ class HomeContent extends Component {
             <ListGroup>
               <ListGroup.Item style={{border: 'solid 1px white', padding: 10}}>
                 <div>Contact Info</div>
-                <div title={"Please download my resume."}>
-                  <FaFileDownload />
-                  <a 
-                    style={{fontSize: 'small', marginLeft: 10, color: 'black'}}
-                    href={"https://storage.googleapis.com/staging.test-dcfd2.appspot.com/resume.pdf"} 
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Resume
-                  </a>
-                </div>
+                {
+                  /**
+                    <div title={"Please download my resume."}>
+                      <FaFileDownload />
+                      <a 
+                        style={{fontSize: 'small', marginLeft: 10, color: 'black'}}
+                        href={"https://storage.googleapis.com/staging.test-dcfd2.appspot.com/resume.pdf"} 
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Resume
+                      </a>
+                    </div>
+                  */
+                }
                 <div title={"email address"}>
                   <MdEmail />
                   <span style={{marginLeft: 10, fontSize: 'small'}}>xiaoxiaoljq@126.com</span>

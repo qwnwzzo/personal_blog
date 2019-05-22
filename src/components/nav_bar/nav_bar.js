@@ -31,9 +31,9 @@ class NavBar extends Component {
             <Nav.Item>
               <Nav.Link>
                 <Link 
-                  to="/algorithms/"
-                  style={{color: pathName === '/algorithms/'? 'white': '#858585'}}>
-                    Algorithms
+                  to="/blog/"
+                  style={{color: pathName === '/blog/'? 'white': '#858585'}}>
+                    Blog
                 </Link>
               </Nav.Link>
             </Nav.Item>
