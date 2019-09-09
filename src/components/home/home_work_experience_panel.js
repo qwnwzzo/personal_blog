@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 import Image from 'react-bootstrap/Image';
 import meazureupLogo from '../../statics/meazureup.png';
+import uoftLogo from '../../statics/university_of_toronto.jpg';
 
 class HomeWorkExperiencePanel extends Component {
   render(){
@@ -50,6 +51,26 @@ class HomeWorkExperiencePanel extends Component {
               style={{width: '100%', marginTop: 10, cursor: 'pointer'}}
               onClick={() => window.open('https://meazureup.com/', '_blank')}>
               <Image style={{width: '100%'}} src={meazureupLogo} thumbnail />
+            </div>
+          </TimelineItem>
+          <TimelineItem
+            key="003"
+            dateText="2015 Summer"
+            dateInnerStyle={{ background: '#808000', color: 'white', fontSize: 'small' }}
+            bodyContainerStyle={{
+              background: '#ddd',
+              padding: '10px',
+              borderRadius: '8px',
+              boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+            }}
+          >
+            <h5>Teaching Assistant</h5>
+            <div>CSC148 (Introduction to Computer Science)</div>
+            <div>Toronto, Ontario</div>
+            <div 
+              style={{width: '100%', marginTop: 10, cursor: 'pointer'}}
+              onClick={() => window.open('https://www.utoronto.ca/', '_blank')}>
+              <Image style={{width: '100%'}} src={uoftLogo} thumbnail />
             </div>
           </TimelineItem>
         </Timeline>
