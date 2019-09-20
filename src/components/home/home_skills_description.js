@@ -95,6 +95,7 @@ class HomeSkillsDescription extends Component {
               <div style={{marginLeft: 20}}>
                 <ul>
                   <li>Machine Learning ( Python, TensorFlow, Keras )</li>
+                  <li>Deep Learning</li>
                   <li>Digital Image Processing</li>
                 </ul>
               </div>
